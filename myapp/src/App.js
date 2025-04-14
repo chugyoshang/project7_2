@@ -2,11 +2,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import QuizContainer from './components/Quiz/QuizContainer';
-import Leaderboard from './components/Leaderboard/Leaderboard';
+// import Leaderboard from './components/Leaderboard/Leaderboard';
 import Results from './components/Quiz/Results';
-import Login from './components/Auth/Login';
-import Register from './components/Auth/Register';
-import PrivateRoute from './components/Auth/PrivateRoute';
+// import Login from './components/Auth/Login';
+// import Register from './components/Auth/Register';
+// import PrivateRoute from './components/Auth/PrivateRoute';
 import { QuizProvider } from './context/QuizContext';
 import { AuthProvider } from './context/AuthContext';
 import Header from './components/Home';
