@@ -1,0 +1,72 @@
+/* 전체 배경 스타일 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; /* 세련된 폰트 */
+  background-image: url('/home/rytkdsla/project7_2/project7_2/myapp/public/images/back.jpg'); /* 절대 경로로 수정 */
+  background-size: cover; /* 화면 크기에 맞게 조정 */
+  background-position: center; /* 가운데 정렬 */
+  background-repeat: no-repeat; /* 반복 제거 */
+}
+
+
+/* 공통 컨테이너 스타일 */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 컨테이너 스타일 */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 수평 가운데 정렬 */
+  justify-content: center; /* 수직 가운데 정렬 */
+  height: 100vh; /* 화면 전체 높이 */
+}
+
+/* 박스 스타일 (테두리 안에 요소 모으기) */
+.home-box {
+  background-color: rgba(255, 255, 255, 0.9); /* 반투명 흰색 배경 */
+  border-radius: 15px; /* 둥근 모서리 */
+  padding: 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* 그림자 추가 */
+}
+
+/* 제목 스타일 */
+.home-title {
+  font-size: 2.5rem;
+  color: #34495e; /* 어두운 회색 */
+}
+
+.home-subtitle {
+  font-size: 1.2rem;
+  color: #2c3e50; /* 진한 회색 */
+}
+
+/* 버튼 스타일 */
+.difficulty-button {
+  background-color: #2ecc71; /* 초록색 버튼 */
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 25px; /* 둥근 모서리 */
+  font-size: 1rem;
+}
+
+.difficulty-button:hover {
+  background-color: #27ae60; /* hover 시 더 진한 초록색 */
+}
+
+.difficulty-button {
+  transition: transform .3s ease-in-out; /* 애니메이션 추가 */
+}
+
+.difficulty-button:hover {
+  transform: scale(1.05); /* hover 시 확대 효과 */
+}
+
+.logout-button {
+  margin-top:20px; /* 로그아웃 버튼 상단 간격 추가 */
+}

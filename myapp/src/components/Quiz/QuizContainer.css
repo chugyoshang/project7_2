@@ -1,0 +1,130 @@
+/* 배경 및 전체 레이아웃 */
+.quiz-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* 퀴즈 박스 스타일 */
+.quiz-box {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  width: 500px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 퀴즈 헤더 (문제 번호 & 타이머) */
+.quiz-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+}
+
+.question-progress {
+  font-weight: bold;
+  color: #34495e;
+}
+
+.timer-display {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+/* 퀴즈 내용 */
+.quiz-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 난이도 선택 스타일 */
+.difficulty-selection {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.difficulty-selection button {
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.difficulty-selection button:hover {
+  background-color: #27ae60;
+  transform: scale(1.03);
+}
+
+.difficulty-selection button.selected {
+  background-color: #3498db;
+}
+
+/* 시작 버튼 스타일 */
+.start-quiz-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 20px;
+  align-self: center;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.start-quiz-btn:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+/* 재시도 버튼 스타일 */
+.retry-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+  align-self: center;
+  transition: background-color 0.3s;
+}
+
+.retry-button:hover {
+  background-color: #c0392b;
+}
+
+/* 로딩 및 에러 컨테이너 */
+.loading-container,
+.error-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 600px) {
+  .quiz-box {
+    width: 100%;
+    padding: 20px;
+  }
+}
